@@ -1,5 +1,9 @@
 package com.example.repo;
 
-public interface ContactoRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.demo.modelo.Contacto;
+
+public interface ContactoRepo extends JpaRepository<Contacto, Integer>{
 
 }
